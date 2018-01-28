@@ -1,0 +1,26 @@
+body {
+}
+header {
+  font-size: 100px;
+  background-color: Linen;
+  border-bottom: 1px solid;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+  #image {
+    align-self: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 120px;
+  }
+  img {border: 1px; float: left;}
+  #para {align-self: center;}
+  nav {
+    border-right: 50px;
+    float: left;
+  }
+  p{
+    text-align: center;
+    padding: 100px;
+  }
