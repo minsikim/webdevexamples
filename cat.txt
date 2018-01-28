@@ -1,0 +1,3 @@
+<a href="http://localhost/index.php?id=1"><cat>Architect</cat></a>
+<a href="http://localhost/index.php?id=2"><cat>Designer</cat></a>
+<a href="http://localhost/index.php?id=3"><cat>Developer</cat></a>
