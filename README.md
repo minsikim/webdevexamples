@@ -1,2 +1,2 @@
 # webdevexamples
-html, css, js examples for beginners
+html, css, js examples for personal reusage
