@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Salinger.MS</title>
+</head>
+
+<body>
+  <div id="top" align="center">
+  	<header>
+      <a href="/index.html"><img src="/img/main.png" width=150px/></a>
+  		<h1>Salinger.MS</h1>
+  	</header>
+    <nav>
+      <cat>Architect</cat>
+      <cat>Designer</cat>
+      <cat>Developer</cat>
+    </nav>
+  </div>
+  <!-- in this div, everything is grabbed into one form which is commonly used
+  with the action="link" method="METHOD NAME" to convey user input data to
+  servers by sql. -->
+  <!-- it changes the url to
+  LINK_FILE?INPUT1_NAME=INPUT1_VALUE&INPUT2_NAME=INPUT2_VALUE  ...and so on -->
+  <!-- <div>
+    <form action="http://localhost/php/3.php" method="GET">
+      <p>제목 : <input type = "text" name="title"/></p>
+      <p>내용 : <textarea name="description"></textarea/></p>
+      <input type="submit"/>
+    </form>
+  </div> -->
+  <div>
+    <form action="http://localhost/php/3.php" method="POST">
+      <p>제목 : <input type = "text" name="title"/></p>
+      <p>내용 : <textarea name="description"></textarea/></p>
+      <input type="submit"/>
+    </form>
+  </div>
+
+</body>
+</html>

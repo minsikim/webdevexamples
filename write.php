@@ -27,20 +27,12 @@
     </nav>
   </div>
   <div class="contents">
-    <?php
-    if(empty($_GET['id'])){
-      echo "<p>Hello</p>";
-    }
-    else{
-      echo file_get_contents("nav".$_GET['id'].".txt");
-      echo '</br>';
-    }
-    while($row = mysqli_fetch_assoc($result)){
-      echo $row['id'];
-      echo $row['title'];
-      echo $row['author'].'</br>';
-    }
-     ?>
+    <form class="" action="process.php" method="post">
+      <p>제목 : <input type = "text" name="title"/></p>
+      <p>작성 : <input type = "text" name="author"/></p>
+      <p>내용 : <textarea name="description"></textarea/></p>
+      <input type="submit"/>
+    </form>
   </div>
 
 </body>
