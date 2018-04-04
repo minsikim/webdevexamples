@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+    document.body.setAttribute('style','margin:0px;')
+    var canvas = document.getElementById('canvas');
+    canvas.setAttribute('style','width:100%; height:100%;');
+    var w = document.body.offsetWidth;
+    var h = document.body.offsetHeight;
+    canvas.width = w;
+    canvas.setAttribute('height',h);
+    var context = canvas.getContext('2d');
+    context.clearRect(0,0,w,h);
+    context.fillStyle = 'red';
+    context.fillRect(0,0,w,h);
+    context.font = '48px serif';
+    context.strokeText('Hello world', 50, 100);
+    var downscaleFactor= 0.80;
+    context.scale( downscaleFactor, downscaleFactor );
+</script>
+</html>
